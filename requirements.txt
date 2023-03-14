@@ -1,10 +1,1 @@
-BeautifulSoup
-bs4
-requests
-pandas
-numpy
-datetime
-timedelta
-streamlit
-re
-matplotlib.pyplot
+
