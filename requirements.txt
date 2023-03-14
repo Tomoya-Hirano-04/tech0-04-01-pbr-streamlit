@@ -1,2 +1,11 @@
+BeautifulSoup
 bs4
-matplotlib
+requests
+pandas
+numpy
+datetime
+timedelta
+streamlit
+re
+matplotlib.pyplot
+japanize_matplotlib
