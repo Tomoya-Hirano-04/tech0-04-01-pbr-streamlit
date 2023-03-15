@@ -50,10 +50,6 @@ ax = fig.add_subplot(111)
 pbr = result['PBR'].astype(float)  # PBR
 xpos = np.arange(len(pbr))  
 
-for i, val in enumerate(pbr):
-    if val == 'PBRが取得できていない企業が含まれています。':
-        pbr[i] = 0.0
-
 cmap = plt.cm.get_cmap('Set3', len(pbr))
 colors = [cmap(i) for i in range(len(pbr))]
 
