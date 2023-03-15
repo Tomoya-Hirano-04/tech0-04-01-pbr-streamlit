@@ -55,6 +55,7 @@ colors = [cmap(i) for i in range(len(pbr))]
 
 ax.bar(xpos, pbr, color=colors)
 ax.set(xticks=xpos, xticklabels=result['企業名'])
+ax.xaxis.label.set_fontname('MS Gothic')
 #y軸の範囲を設定
 ax.set_ylim(bottom=0, top=result['PBR'].astype(float).max() + 0.5) 
 
