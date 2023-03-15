@@ -7,7 +7,7 @@ from datetime import timedelta
 import streamlit as st
 import re
 import matplotlib.pyplot as plt
-plt.rcParams['font.family'] = 'MS Gothic'
+plt.rcParams['font.family'] = 'ipaexg'
 
 stock_list = st.text_input('株式番号を入力してください（カンマ区切りで複数指定可）', '2201,1301,7203')
 stock_list = [int(stock) for stock in stock_list.split(',')]
