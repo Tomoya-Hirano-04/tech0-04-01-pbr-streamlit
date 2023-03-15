@@ -7,7 +7,7 @@ from datetime import timedelta
 import streamlit as st
 import re
 import matplotlib.pyplot as plt
-plt.rcParams['font.family'] = 'ipaexg'
+plt.rcParams['font.family'] = 'MS Gothic'
 
 stock_list = st.text_input('株式番号を入力してください（カンマ区切りで複数指定可）', '2201,1301,7203')
 stock_list = [int(stock) for stock in stock_list.split(',')]
@@ -61,5 +61,6 @@ ax.bar(xpos, pbr, color=colors)
 ax.set(xticks=xpos, xticklabels=result['企業名'])
 #y軸の範囲を設定
 ax.set_ylim(bottom=0, top=result['PBR'].astype(float).max() + 0.5) 
+plt.xlabel(fontname="MS Gothic")
 
 st.pyplot(fig)
